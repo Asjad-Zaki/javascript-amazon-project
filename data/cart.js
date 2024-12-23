@@ -17,11 +17,10 @@ function saveToStorage(){
     localStorage.setItem('cart', JSON.stringify(cart));
 }
 export function addToCart(productId){
-    let matchingItem;
+        let matchingItem;
 
         cart.forEach((cartItem) => {
-            if (productId === cartItem.
-                productId) {
+            if (productId === cartItem.productId) {
                 matchingItem = cartItem;
             }
         });
